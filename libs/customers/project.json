@@ -1,0 +1,21 @@
+{
+  "name": "customers",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/customers/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["scope:customers", "type:feature"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/customers/jest.config.cts",
+        "tsConfig": "libs/customers/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

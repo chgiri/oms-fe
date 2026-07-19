@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "preserve",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "paths": {
+      "@oms-fe/core": ["./libs/core/src/index.ts"],
+      "@oms-fe/shared": ["./libs/shared/src/index.ts"],
+      "@oms-fe/auth": ["./libs/auth/src/index.ts"],
+      "@oms-fe/customers": ["./libs/customers/src/index.ts"],
+      "@oms-fe/products": ["./libs/products/src/index.ts"],
+      "@oms-fe/inventory": ["./libs/inventory/src/index.ts"],
+      "@oms-fe/orders": ["./libs/orders/src/index.ts"],
+      "@oms-fe/payments": ["./libs/payments/src/index.ts"],
+      "@oms-fe/shipments": ["./libs/shipments/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
