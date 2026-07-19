@@ -4,7 +4,7 @@
   "projectType": "application",
   "sourceRoot": "e2e/src",
   "implicitDependencies": [
-    "oms-workspace"
+    "oms-fe"
   ],
   "// targets": "to see all targets run: nx show project e2e --web",
   "targets": {}

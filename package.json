@@ -1,5 +1,5 @@
 {
-  "name": "@oms-workspace/source",
+  "name": "@oms-fe/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {

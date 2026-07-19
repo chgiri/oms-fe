@@ -66,5 +66,5 @@
       "unitTestRunner": "vitest-angular"
     }
   },
-  "defaultProject": "oms-workspace"
+  "defaultProject": "oms-fe"
 }

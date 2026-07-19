@@ -1,5 +1,5 @@
 {
-  "name": "oms-workspace",
+  "name": "oms-fe",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "includedScripts": [],
   "projectType": "application",
@@ -14,7 +14,7 @@
       ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/oms-workspace",
+        "outputPath": "dist/oms-fe",
         "browser": "./src/main.ts",
         "tsConfig": "tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -57,10 +57,10 @@
       "defaultConfiguration": "development",
       "configurations": {
         "production": {
-          "buildTarget": "oms-workspace:build:production"
+          "buildTarget": "oms-fe:build:production"
         },
         "development": {
-          "buildTarget": "oms-workspace:build:development"
+          "buildTarget": "oms-fe:build:development"
         }
       }
     },
@@ -82,9 +82,9 @@
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "oms-workspace:build",
+        "buildTarget": "oms-fe:build",
         "port": 4200,
-        "staticFilePath": "dist/oms-workspace/browser",
+        "staticFilePath": "dist/oms-fe/browser",
         "spa": true
       }
     }
